@@ -30,7 +30,8 @@
         ]
       },
       "electronPackagerConfig": {
-        "packageManager": "npm"
+        "packageManager": "npm",
+        "icon": "./App.ico"
       },
       "electronWinstallerConfig": {
         "name": "metaxplorer"
