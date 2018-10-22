@@ -1,0 +1,22 @@
+@import "./ColorPalette.less";
+
+.layout {
+    display: grid;
+    grid-template-rows: 48px auto 48px;
+    height: 100vh;
+    background-color: @dm-charcoal;
+    color: @dm-lightgray;
+
+    .header {
+        grid-row: 1;
+        background-color: @dm-darkgray;
+    }
+    .body {
+        grid-row: 2;
+        background-color: @dm-charcoal;
+    }
+    .footer {
+        grid-row: 3;
+        background-color: @dm-darkgray;
+    }
+}
