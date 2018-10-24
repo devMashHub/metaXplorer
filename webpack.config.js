@@ -18,7 +18,8 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/,
@@ -35,7 +36,16 @@ module.exports = {
                     'css-loader',
                     'less-loader'
                 ]                
-            }
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
+                use: [{
+                  loader: 'url-loader',
+                  options: {
+                    limit: 10000
+                  }
+                }]
+              }
         ]
     },
     plugins: [

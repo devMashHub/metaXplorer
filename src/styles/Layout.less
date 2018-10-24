@@ -2,21 +2,21 @@
 
 .layout {
     display: grid;
-    grid-template-rows: 48px auto 48px;
+    grid-template-rows: min-content auto min-content;
     height: 100vh;
-    background-color: @dm-charcoal;
-    color: @dm-lightgray;
+    background-color: @dm-layout-bkg;
+    color: @dm-gray-lighter;
 
     .header {
         grid-row: 1;
-        background-color: @dm-darkgray;
+        background-color: @dm-layout-header-bkg;
     }
     .body {
         grid-row: 2;
-        background-color: @dm-charcoal;
+        background-color: @dm-layout-body-bkg;
     }
     .footer {
         grid-row: 3;
-        background-color: @dm-darkgray;
+        background-color: @dm-layout-footer-bkg;
     }
 }
